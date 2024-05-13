@@ -1,0 +1,169 @@
+% !TEX TS-program = lualatex
+% !TEX encoding = UTF-8
+
+\documentclass[11pt, twoside]{report}
+
+\usepackage{fontspec}
+\usepackage[utf8]{inputenc}
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage{bbding}
+\usepackage{ragged2e}
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{longtable}
+\usepackage[margin=1in]{geometry}
+
+\usepackage[autocompile]{gregoriotex}
+
+\titleformat{\chapter}[block]{\huge\scshape\filcenter}{}{1ex}{}
+\titleformat{\section}[block]{\LARGE\scshape\filcenter}{}{1ex}{}
+\titleformat{\subsection}[block]{\Large\scshape\filcenter}{}{1ex}{}
+\titleformat{\subsubsection}[block]{\large\bfseries\filcenter}{}{1ex}{}
+
+\newenvironment{versicles}{\par\leavevmode\parskip=0pt\nopagebreak}{}
+
+\begin{document}
+
+\section*{Ad Completorium.}
+
+\subsection*{Oratio ante Divinum Officium.}
+\input{oratio-ante.tex}
+
+\subsection*{Incipit.}
+
+\begin{tabular}{p{8cm} | p{8cm}}
+\Vbar. Jube, Dómine, benedícere. &
+\Vbar. Grant, Lord, a blessing. \\
+\textit{Benedictio.} Noctem quiétam et finem perféctum concédat nobis Dóminus omnípotens. &
+\textit{Benediction.} May almighty God grant us a quiet night and a perfect end. \\
+\Rbar. Amen. &
+\Rbar. Amen.
+\end{tabular}
+
+\subsection*{Lectio brevis. 1 Pet. 5:8-9.}
+\begin{tabular}{p{8cm} | p{8cm}}
+Fratres: Sóbrii estóte, et vigiláte: quia adversárius vester diábolus tamquam leo rúgiens círcuit, quærens quem dévoret: cui resístite fortes in fide. Tu autem, Dómine, miserére nobis. &
+Brothers: Be sober and watch: because your adversary the devil, as a roaring lion, goeth about seeking whom he may devour. Whom resist ye, strong in faith. But thou, O Lord, have mercy upon us. \\
+\Rbar. Deo grátias. &
+\Rbar. Thanks be to God. 
+\end{tabular}
+
+\begin{longtable}{@{\hskip0pt} p{8cm} | p{8cm} @{\hskip0pt}}
+% \begin{tabular}{p{8cm} | p{8cm}}
+\Vbar. Adjutórium nóstrum + in nómine Dómini. &
+\Vbar. Our help is + in the name of the Lord. \\
+\Rbar. Qui fecit cælum et terram. &
+\Rbar. Who made heaven and earth. \\
+Pater noster \textit{secreto}. &
+Our Father \textit{silently}. \\
+Confíteor Deo omnipoténti, beátæ Maríæ semper Vírgini, beáto Michaéli Archángelo, beáto Joánni Baptístæ, sanctis Apóstolis Petro et Paulo, et ómnibus Sanctis, quia peccávi nimis, cogitatióne, verbo et ópere: mea culpa, mea culpa, mea máxima culpa. Ídeo precor beátam Maríam semper Vírginem, beátum Michaélem Archángelum, beátum Joánnem Baptístam, sanctos Apóstolos Petrum et Paulum, et omnes Sanctos, oráre pro me ad Dóminum Deum nostrum. &
+I confess to almighty God, to blessed Mary ever Virgin, to blessed Michael the Archangel, to blessed John the Baptist, to the holy Apostles Peter and Paul, and to all the Saints, that I have sinned exceedingly in thought, word and deed: through my fault, through my fault, through my most grievous fault. Therefore I beseech blessed Mary ever Virgin, blessed Michael the Archangel, blessed John the Baptist, the holy Apostles Peter and Paul, and all the Saints, to pray for me to the Lord our God. \\
+Misereátur nostri omnípotens Deus, et dimíssis peccátis nostris, perdúcat nos ad vitam ætérnam. \Rbar. Amen. &
+May almighty God have mercy on us, forgive us our sins, and bring us to everlasting life. \Rbar. Amen. \\
+Indulgéntiam, + absolutiónem et remissiónem peccatórum nostrórum tríbuat nobis omnípotens et miséricors Dóminus. \Rbar. Amen. &
+May the almighty + and merciful Lord grant us pardon, absolution and remission of our sins. \Rbar. Amen.
+\end{longtable}
+% \end{tabular}
+
+\begin{tabular}{p{8cm} | p{8cm}}
+\Vbar. Convérte nos + Deus, salutáris noster. &
+\Vbar. Turn us then, + O God, our saviour. \\
+\Rbar. Et avérte iram tuam a nobis. &
+\Rbar. And let thy anger cease from us. \\
+\Vbar. Deus + in adjutórium meum inténde. &
+\Vbar. O God, + come to my assistance. \\
+\Rbar. Dómine, ad adjuvándum me festína. &
+\Rbar. O Lord, make haste to help me. \\
+Glória Patri, et Fílio, et Spirítui Sancto. Sicut erat in princípio, et nunc, et semper, et in sǽcula sæculórum. Amen. Allelúja. &
+Glory be to the Father, and to the Son, and to the Holy Ghost. As it was in the beginning, is now, and ever shall be, world without end. Amen. Alleluia. \\
+\textit{Vel:} Laus tibi, Dómine, Rex ætérnæ glóriæ. &
+\textit{Or:} Praise be to thee, O Lord, King of eternal glory. 
+\end{tabular}
+
+\begin{tabular}{p{8cm} | p{8cm}}
+Aña. Miserére. \textit{Vel:} Allelúja. &
+Ant. Have mercy. \textit{Or:} Alleluia. 
+\end{tabular}
+
+\subsection*{Psalmus 4.}
+\input{psalmi/4-8.tex}
+
+\subsection*{Psalmus 30.}
+\input{psalmi/30-8.tex}
+
+\subsection*{Psalmus 90.}
+\input{psalmi/90-8.tex}
+
+\subsection*{Psalmus 133.}
+\input{psalmi/133-8.tex}
+
+\begin{tabular}{p{8cm} | p{8cm}}
+Aña. Miserére mihi, Dómine, et exáudi oratiónem meam. &
+Ant. Have mercy on me O Lord, and hearken to my prayer. \\
+\textit{Vel:} Allelúja, allelúja, allelúja. &
+\textit{Or:} Alleluia, alleluia, alleluia. 
+\end{tabular}
+
+\subsection*{Hymnus.}
+\begin{tabular}{p{8cm} | p{8cm}}
+Te lucis ante términum, &
+Before the ending of the day, \\
+Rerum Creátor, póscimus, &
+Creator of the world, we pray \\
+Ut sólita cleméntia &
+That with thy wonted favor thou \\
+Sis præsul ad custódiam. &
+Wouldst be our guard and keeper now. \\
+\\
+Procul recédant sómnia, &
+From all ill dreams defend our eyes, \\
+Et nóctium phantásmata; &
+From nightly fears and fantasies; \\
+Hostémque nóstrum cómprime, &
+Tread under foot our ghostly foe, \\
+Ne polluántur córpora. &
+That no pollution we may know. \\
+\\
+Præsta, Pater omnípotens, &
+O Father, that we ask be done, \\
+Per Jesum Christum Dóminum, &
+Through Jesus Christ, thine only Son; \\
+Qui tecum in perpétuum &
+Who, with the Holy Ghost and thee, \\
+Regnat cum Sancto Spíritu. Amen. &
+Doth live and reign eternally. Amen.
+\end{tabular}
+
+\subsection*{Capitulum. Jer. 14:9.}
+\begin{tabular}{p{8cm} | p{8cm}}
+Tu autem in nobis es, Dómine, et nomen sanctum tuum invocátum est super nos: ne derelínquas nos, Dómine, Deus noster. &
+But thou, O Lord, art among us, and thy name is called upon by us: forsake us not, O Lord our God. \\
+\Rbar. Deo grátias. &
+\Rbar. Thanks be to God. 
+\end{tabular}
+
+\subsection*{Responsorium.}
+\begin{tabular}{p{8cm} | p{8cm}}
+\Rbar. In manus tuas, Dómine, * Comméndo spíritum meum. &
+\Rbar. Into thy hands, O Lord, * I commend my spirit. \\
+In manus tuas, Dómine, * Comméndo spíritum meum. &
+Into thy hands, O Lord, * I commend my spirit. \\
+\Vbar. Redemísti nos, Dómine, Deus veritátis. &
+\Vbar. For thou hast redeemed us, O Lord, God of truth. \\
+\Rbar. Comméndo spíritum meum. &
+\Rbar. I commend my spirit. \\
+\Vbar. Glória Patri, et Fílio, et Spirítui Sancto. &
+\Vbar. Glory be to the Father, and to the Son, and to the Holy Ghost. \\
+\Rbar. In manus tuas, Dómine, * Comméndo spíritum meum. &
+\Rbar. Into thy hands, O Lord, * I commend my spirit. \\
+\\
+\Vbar. Custódi nos, Dómine, ut pupíllam óculi. &
+\Vbar. Keep us, Lord, as the apple of thine eye. \\
+\Rbar. Sub umbra alárum tuárum prótege nos. &
+\Rbar. Protect us under the shadow of thy wings.
+\end{tabular}
+
+\subsection*{Canticum Simeonis. Luc. 2:29-32.}
+
+
+\end{document}
